@@ -148,8 +148,10 @@
     <section class="about">
         <div class="container">
             <div class="about__container">
-                <div class="about__grid-element"><img src="images/main_photo.jpg" alt="me"></div>
-                <div class="about__grid-element">
+                <div class="about__grid-element about__img-block">
+                    <img src="images/main_photo.jpg" alt="me">
+                </div>
+                <div class="about__grid-element about__grid-about">
                     <div class="title title_fz16 title_black about__subtitle">Про меня</div>
                     <h2 class="title title_black aboute__title">Меня зовут Максим</h2>
                     <div class="divider"></div>
@@ -448,8 +450,6 @@
                         <div class="title title_fz14 title_black skills__grid-title">Создание сайтов</div>
                         <div class="skills__procent">100%</div>
                     </div>
-                    <!--<div style="width:100%; height:14px; background-color: #E8E4DE; position: relative; margin-top: 27px; border-radius: 4px;"
-                        class="skills__grid-line"></div>-->
                     <div class="skills__grid-line">
                         <span></span>
                     </div>
@@ -459,8 +459,7 @@
                         <div class="title title_fz14 title_black skills__grid-title">Создание приложений</div>
                         <div class="skills__procent">85%</div>
                     </div>
-                    <!--<div style="width:100%; height:14px; background-color: #E8E4DE; position: relative; margin-top: 27px; border-radius: 4px;"
-                        class="skills__grid-line"></div>-->
+
                     <div class="skills__grid-line">
                         <span></span>
                     </div>
@@ -470,8 +469,7 @@
                         <div class="title title_fz14 title_black skills__grid-title">Работа с данными</div>
                         <div class="skills__procent">90%</div>
                     </div>
-                    <!--<div style="width:100%; height:14px; background-color: #E8E4DE; position: relative; margin-top: 27px; border-radius: 4px;"
-                        class="skills__grid-line"></div>-->
+
                     <div class="skills__grid-line">
                         <span></span>
                     </div>
@@ -481,8 +479,7 @@
                         <div class="title title_fz14 title_black skills__grid-title">Креативность</div>
                         <div class="skills__procent">75%</div>
                     </div>
-                    <!--<div style="width:100%; height:14px; background-color: #E8E4DE; position: relative; margin-top: 27px; border-radius: 4px;"
-                        class="skills__grid-line"></div>-->
+
                     <div class="skills__grid-line">
                         <span></span>
                     </div>
@@ -492,8 +489,7 @@
                         <div class="title title_fz14 title_black skills__grid-title">Создание дизайна</div>
                         <div class="skills__procent">90%</div>
                     </div>
-                    <!--<div style="width:100%; height:14px; background-color: #E8E4DE; position: relative; margin-top: 27px; border-radius: 4px;"
-                        class="skills__grid-line"></div>-->
+
                     <div class="skills__grid-line">
                         <span></span>
                     </div>
@@ -503,8 +499,7 @@
                         <div class="title title_fz14 title_black skills__grid-title">Soft skills</div>
                         <div class="skills__procent">95%</div>
                     </div>
-                    <!--<div style="width:100%; height:14px; background-color: #E8E4DE; position: relative; margin-top: 27px; border-radius: 4px;"
-                        class="skills__grid-line"></div>-->
+
                     <div class="skills__grid-line">
                         <span></span>
                     </div>
@@ -631,20 +626,25 @@
                         <div class="contacts__form-head">
                             <div class="contacts__form-input">
                                 <input required name="name" type="text">
-                                <label>Ваше имя</label>
+                                <label for="name">Ваше имя</label>
                             </div>
                             <div class="contacts__form-input">
-                                <input required name="mail" type="email">
-                                <label>Ваша почта</label>
+                                <input required name="email" type="email">
+                                <label for="email">Ваша почта</label>
                             </div>
 
                         </div>
                         <div class="contacts__form-textarea">
                             <textarea required name="message" cols="30" rows="10"></textarea>
-                            <label>Ваше сообщение</label>
+                            <label for="message">Ваше сообщение</label>
                         </div>
 
-                        <button class="btn">Отправить сообщение</button>
+                        <div class="contacts__form-bot">
+                            <button class="btn">Отправить сообщение</button>
+                            <input required type="checkbox" name="confirm" id="confirm">
+                            <label for="confirm">Я согласен(а) с <a href="/privacy.html" target="_blanc">политикой
+                                    конфиденциальности</a></label>
+                        </div>
                     </form>
                 </div>
             </div>
